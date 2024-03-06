@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animal</title>
+</head>
+
+<body>
+    <script>
+        // Construtor
+        function Animal(tipo, cor, idade) {
+            // Atributos
+            this.tipo = tipo;
+            this.cor = cor;
+            this.idade = idade;
+
+            // Métodos
+            this.mudaIdade = function (novaIdade) {
+                this.idade = novaIdade;
+            }
+        }
+
+        // Atributo estático
+        Animal.cores = ["Branco", "Preto", "Malhado"];
+
+        // Método estático
+        Animal.adicionaCor = function (novaCor) {
+            Carro.cores.push("Tigrado");
+        }
+
+
+        let animal = new Animal("gato", "Preto", 2);
+
+
+        document.write(JSON.stringify(animal));
+    </script>
+</body>
+
+</html>
